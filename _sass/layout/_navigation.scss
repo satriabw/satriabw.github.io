@@ -225,13 +225,15 @@
       }
     }
 
-    #theme-toggle {
+    .masthead__menu-item--theme {
+      margin-left: auto;
+      
       button {
         position: static;
         background: transparent;
         border: none;
-        padding: 0;
-        margin: 0;
+        padding: 0.5rem 0;
+        margin: 0 1rem;
         height: auto;
         width: 25px;
         display: flex;
@@ -239,9 +241,14 @@
         align-items: center;
         cursor: pointer;
         color: var(--global-masthead-link-color);
+        transition: color 0.2s ease;
         
         &:hover {
           color: var(--global-masthead-link-color-hover);
+        }
+        
+        i {
+          font-size: 1.2rem;
         }
       }
     }

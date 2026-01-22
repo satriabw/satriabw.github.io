@@ -1,0 +1,17 @@
+---
+layout: archive
+title: "Portfolio"
+permalink: /portfolio/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>Please see my <a href="{{ base_path }}/files/CV.pdf" class="btn btn--primary">CV (PDF)</a> for project details and portfolio information.</p>
+
+<p>Portfolio items will be added here soon. For now, you can find my work on <a href="https://github.com/satriabw">GitHub</a>.</p>
+
+{% for post in site.portfolio %}
+  {% include archive-single.html %}
+{% endfor %}
+
